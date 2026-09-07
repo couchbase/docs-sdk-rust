@@ -98,16 +98,16 @@ include::{version-common}@sdk:shared:partial$capella.adoc[tag=cloud]
 | | Server 7.6.x  | Server 8.0
 
 | KV Range Scan
-2+| All SDK versions
+2+| Unsupported
 
 | Vector Search
 2+| All SDK versions
 
 | Zone aware replica reads
-2+| All SDK versions
+2+| Unsupported
 
 | KV preferred server groups reads 
-2+| All SDK versions
+2+| Unsupported
 
 | Vector Query using GSI
 | N/A
