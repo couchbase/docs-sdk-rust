@@ -40,7 +40,7 @@ https://docs.rs/couchbase/1.0.3/couchbase/[API Documentation]
 ==== New Features and Behavioral Changes
 
 * https://jira.issues.couchbase.com/browse/RSCBC-303[RSCBC-303]:
-Updated the `hickory-resolver` dependency to 0.26.1.
+Updated the `hickory-resolver` dependency to `0.26.1`.
 
 ==== Fixed issues
 
