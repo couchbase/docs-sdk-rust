@@ -30,6 +30,23 @@ All patch releases for each dot minor release should be API compatible, and safe
 Binary compatibility is not guaranteed for any {name-sdk} release, and you should rebuild your application when changing the SDK.
 
 
+[v1.0.3]
+=== Version 1.0.3 (15 September 2026)
+
+Version 1.0.3 is a maintenance release for the Rust SDK 1.0.
+
+https://docs.rs/couchbase/1.0.3/couchbase/[API Documentation]
+
+==== New Features and Behavioral Changes
+
+* https://jira.issues.couchbase.com/browse/RSCBC-303[RSCBC-303]:
+Updated the `hickory-resolver` dependency to 0.26.1.
+
+==== Fixed issues
+
+* https://jira.issues.couchbase.com/browse/RSCBC-301[RSCBC-301]:
+Fixed an issue where the SDK did not send its client name during the memcached HELO negotiation.
+
 [v1.0.2]
 === Version 1.0.2 (11 August 2026)
 
