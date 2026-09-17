@@ -111,7 +111,7 @@ include::{version-common}@sdk:shared:partial$compat.adoc[tag=cloud]
 | All SDK versions
 |===
 
-include::{version-common}@sdk:shared:partial$compat[tag=feature-notes]
+include::{version-common}@sdk:shared:partial$compat.adoc[tag=feature-notes]
 
 
 
