@@ -1,7 +1,6 @@
 = Compatibility
 :description: Platform compatibility, and features available in different SDK versions, and compatibility between Server and SDK. \
 Plus notes on Cloud, networks, and AWS Lambda.
-:page-aliases: ROOT:overview,ROOT:compatibility-versions-features,compatibility-versions-features
 :page-toclevels: 3
 :table-caption!:
 
@@ -14,33 +13,28 @@ The Couchbase {name-sdk} {sdk_dot_minor} Client supports Rust 1.90+.
 
 === OS Compatibility
 
-The {name-sdk} will run on, and is supported on, the following OSs and platforms.
-The SDK has been tested on a representative subset of the platforms listed below.
 
-****
-[discrete]
-=== GNU/Linux
-* Amazon Linux 2 & AL2023.
-* Red Hat Enterprise Linux 8, 9, & 10.
-* Oracle Linux 8, 9, & 10.
-* Ubuntu (LTS) 22.04 (_Jammy_) & 24.04 (_Noble_).
-* Debian 11 (_Bullseye_), Debian 12 (_Bookworm_), & Debian 13 (_Trixie_).
-* SUSE Enterprise Linux 12 & 15.
-* Alpine Linux 3.21 - 3.23.
-[discrete]
-=== Microsoft Windows
-* Microsoft Windows 10 & 11;
-* Windows Server 2019, 2022, & 2025.
-[discrete]
-=== Mac OS X
-The current and previous two releases of OS X.
-At time of writing (March 2026): 26 (Tahoe), 15 (Sequoia), and 14 (Sonoma).
-****
+include::{version-common}@sdk:shared:partial$compat.adoc[tag=os-compat]
+
+
+
+
+// Platforms, Chipsets, and Virtual Environments.
+include::{version-common}@sdk:shared:partial$compat.adoc[tag=virtual]
+
+
 
 
 
 // Network Requirements
-include::{version-common}@sdk:shared:partial$network-requirements.adoc[]
+include::{version-common}@sdk:shared:partial$compat.adoc[tag=network-requirements]
+
+
+
+// Serverless Environments
+include::{version-common}@sdk:shared:partial$compat.adoc[tag=serverless]
+
+
 
 
 
@@ -61,7 +55,7 @@ It is best to upgrade either the SDK or the Couchbase version you are using.
 .Recommended SDK per Server Version Matrix
 [#table_sdk_versions]
 |===
-| | 1.0
+| | 1.0, 1.1
 
 | *Server 7.6 - 8.0*
 | *✔*
@@ -78,12 +72,15 @@ It is best to upgrade either the SDK or the Couchbase version you are using.
 Note the https://www.couchbase.com/support-policy/EOL/[End of Life dates^] for Couchbase Server and SDK versions.
 See the notes there for Support details.
 
+
+// Will become relevant once 7.6 goes EOL:
+// include::{version-common}@sdk:shared:partial$compat.adoc[tag=matrix-notes2]
+
+
+
 === Capella Compatibility
 
-The Couchbase {name_platform} SDK is fully compatible with Couchbase Capella, our fully-hosted database-as-a-service.
-To make development easier, the SDK includes the Capella client certificate ready installed.
-
-include::{version-common}@sdk:shared:partial$capella.adoc[tag=cloud]
+include::{version-common}@sdk:shared:partial$compat.adoc[tag=cloud]
 
 
 // add in Columnar link
@@ -114,20 +111,27 @@ include::{version-common}@sdk:shared:partial$capella.adoc[tag=cloud]
 | All SDK versions
 |===
 
-This table is not an exhaustive list -- just a few highlights -- provided to help assess compatibility of older versions in particular.
-For a slightly fuller table, see the xref:deployment.adoc#couchbase-operational-cluster-feature-compatibility[Deployment page].
-For alignment of SDKs and new Server features, scroll down to the information below the <<api-version,API Version table>>.
+include::{version-common}@sdk:shared:partial$compat[tag=feature-notes]
+
+
+
 
 === API Version
 
-include::{version-common}@sdk:shared:partial$api-version.adoc[tag=api-version]
+include::{version-common}@sdk:shared:partial$compat.adoc[tag=api-version]
+
+
+
 
 == SDK API Stability
 
+
 === Interface Stability
 
-include::{version-common}@sdk:shared:partial$interface-stability-pars.adoc[tag=interface-stability-section]
+include::{version-common}@sdk:shared:partial$compat.adoc[tag=interface-stability-section]
+
 
 === Older SDK Versions
 
-include::{version-common}@sdk:shared:partial$archive.adoc[tag=link]
+
+include::{version-common}@sdk:shared:partial$compat.adoc[tag=archive-link]

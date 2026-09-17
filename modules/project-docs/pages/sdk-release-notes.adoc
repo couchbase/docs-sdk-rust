@@ -30,6 +30,19 @@ All patch releases for each dot minor release should be API compatible, and safe
 Binary compatibility is not guaranteed for any {name-sdk} release, and you should rebuild your application when changing the SDK.
 
 
+
+[v1.1.0]
+=== Version 1.1.0 (?? October 2026)
+
+
+
+
+
+
+
+== {name-sdk} 1.0 Releases
+
+
 [v1.0.3]
 === Version 1.0.3 (15 September 2026)
 

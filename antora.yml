@@ -1,5 +1,5 @@
 name: rust-sdk
-version: '1.0'
+version: '1.1'
 title: Rust SDK
 start_page: hello-world:overview.adoc
 nav:
@@ -8,15 +8,16 @@ nav:
 asciidoc:
   attributes:
     page-nav-header-levels: 2
-    server_version: '8.0.1'
-    sdk_current_version: '1.0.3'
-    sdk_dot_minor: '1.0'
+    server_version: '8.0.3'
+    sdk_current_version: '1.1.0'
+    sdk_dot_minor: '1.1'
     sdk_dot_major: '1.x'
     version-server: '8.0'
-    version-common: '8.0.1'
+    version-common: '3.10'
     name_platform: 'Rust'
     name_platform_lc: 'rust'
+    lang-code: 'rust'
     name-sdk: 'Rust SDK'
-    sdk_api: '3.9'
+    sdk_api: '3.10'
     sdk-api-link: https://docs.rs/couchbase/latest/couchbase/
     sdk-gh-link: https://github.com/couchbase/couchbase-rs/
