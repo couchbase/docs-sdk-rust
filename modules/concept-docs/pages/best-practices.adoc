@@ -95,6 +95,17 @@ Advanced zone aware....
 ////
 
 
+
+=== Bulk Get, Multi-Get, and Network Latency
+
+include::{version-common}@sdk:shared:partial$best-practices.adoc[tag=bulk-get]
+
+
+==== When to Use Bulk Get
+
+include::{version-common}@sdk:shared:partial$best-practices.adoc[tag=bulk-get-async-platform]
+
+
 == Testing
 
 Integrate developing with the {name-sdk} into your accustomed test framework.
