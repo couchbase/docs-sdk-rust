@@ -7,7 +7,10 @@ Plus notes on Cloud, networks, and AWS Lambda.
 [abstract]
 {description}
 
-The Couchbase {name-sdk} {sdk_dot_minor} Client supports Rust 1.88+.
+* The Couchbase {name-sdk} {sdk_dot_minor} Client supports Rust 1.88+.
+* The Couchbase {name-sdk} {sdk_dot_minor} Client is tested against Rust `stable`.
+At the time of release (October 2026) this is 1.99.
+
 
 == Platform Compatibility
 
