@@ -2,7 +2,7 @@
 
 This repository hosts the documentation source for the https://docs.couchbase.com/rust-sdk/1.1/hello-world/overview.html[Couchbase Rust SDK].
 
-This branch documents the 1.0 release of the SDK.
+This branch documents the 1.1 release of the SDK.
 It follows the https://docs.couchbase.com/rust-sdk/1.1/project-docs/compatibility.html#api-version[SDK 3.10 API].
 
 This branch reflects the new Information Architecture for the SDK docs.
