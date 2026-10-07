@@ -44,9 +44,6 @@ https://docs.rs/couchbase/1.1.0/couchbase/[API Documentation]
 * https://jira.issues.couchbase.com/browse/RSCBC-302[RSCBC-302]:
 Added `Collection::get_replica`, which reads a document from a specific replica, chosen with a `GetReplicaStrategy`.
 For example, `GetReplicaStrategy::from_index(ReplicaIndex::First, None)` reads from the first replica.
-* https://jira.issues.couchbase.com/browse/RSCBC-288[RSCBC-288]:
-Added support for Score Fusion in hybrid Search, through the new `SearchOptions::scoring` option.
-`SearchOptions::disable_scoring` is deprecated in favor of `scoring(Scoring::None)`, and the two cannot be used together.
 * https://jira.issues.couchbase.com/browse/RSCBC-309[RSCBC-309]:
 Added log redaction, enabled with `ClusterOptions::log_redaction(true)`.
 When enabled, the SDK wraps sensitive values in its log output in tags, so that a tool such as https://docs.couchbase.com/server/current/cli/cbcli/cblogredaction.html[cblogredaction] can strip or hash them.
